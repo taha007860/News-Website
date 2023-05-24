@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #333;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+h2 {
+  font-size: 45px;
+  font-weight: 300;
+  margin: 10px;
+}
+
+h2 span {
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.container > div {
+  cursor: pointer;
+  height: 210px;
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  transition: all 0.5s ease-in;
+}
+
+.container > div:hover {
+  opacity: 0.7;
+  transform: scale(0.98);
+}
+
+.container > div:nth-of-type(1) {
+    grid-column: 1/2;
+    margin-left: 25%;
+    width: 85%;
+  }
+  
+  .container > div:nth-of-type(2) {
+    grid-column: 2/3;
+    margin-left: 10%;
+    width: 85%;
+  }
+  
+  .container > div:nth-of-type(3) {
+    grid-column: 1/2;
+    margin-left: 25%;
+    width: 85%;
+  }
+  
+  .container > div:nth-of-type(4) {
+    grid-column: 2/3;
+    margin-left: 10%;
+    width: 85%;
+  }
+  
+  .container > div:nth-of-type(5) {
+    grid-column: 3 / 5;
+    margin-top: -35.125%;
+    height: 204%;
+    margin-right: 25%;
+    width: 85%;
+  }
+
+.bg1 {
+  background: url('https://static3.rokna.net/thumbnail/BR1Q9dpbuKD8/NS2RJzVApQ3E7SFsFf8OS-KvMGwizaa_Q-_dxw0RVwm0qukoI27-JV2XP73Xc1uGeDRyE0w8KrrrEvf2Lcb5DzYd4j3WYr7vwXrZnkpaTeBaI4FXo70tPocd_ylMoA9S/%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF+%D8%AC%D9%87%D8%A7%D9%86%DB%8C.jpg');
+  border: 10px solid green;
+}
+
+.bg2 {
+  background: url("https://1.bp.blogspot.com/-CYvGq9bx1yc/XY4A2YhssNI/AAAAAAAAAMs/CNf9PTbqpQ8KukfCtFeOxww_4GZ0YJzawCLcBGAsYHQ/s1600/Screenshot_1.png");
+  border: 10px solid green;
+}
+.bg3 {
+    background: url("https://khamsat.hsoubcdn.com/images/services/63974/281075e06b731d7671ea2e10cfb62991.jpg");
+    border: 10px solid green;
+}
+  
+.bg4 {
+    background: url("https://pbs.twimg.com/profile_images/414002728999092224/1Go5bsY2.jpeg");
+    border: 10px solid green;
+}
+.bg5 {
+    background: url("https://www.7adramout.net/temp/resized/medium_2023-05-9481fc6de9.jpg");
+    border: 10px solid green;
+}
