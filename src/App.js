@@ -4,6 +4,7 @@ import HomepageBackground from './components/HomepageBackground';
 import FlexImageCube from './components/FlexImageCube';
 import Footer from './components/Footer';
 import Accordion from './components/Accordion';
+import BurgerMenu from './components/BurgerMenu';
 function App() {
   const slides = [
     { url: "https://yt3.ggpht.com/a/AATXAJysbcJbKH22uawe946svPAhQ_5R17z-kUwlQg=s900-c-k-c0xffffffff-no-rj-mo", title: "beach" },
@@ -45,8 +46,9 @@ function App() {
   return (
     <div className="App">
       <HomepageBackground />
-      <div style={containerStyles}>
-        <p style={{color: 'black'}}>تسجيل الدخول</p>
+      <div id="container">
+        <p id="par">تسجيل الدخول</p>
+        <BurgerMenu />
       <MainNewsCarousel slides={slides} />
       </div>
   <div>
@@ -55,10 +57,10 @@ function App() {
   <div>
     <Accordion />
   </div>
-  <div style={{marginTop: '55px', marginRight: '25px', marginLeft: '25px', marginTop: '34px'}}>
+  <div id="foot">
     <Footer />
     </div>
-    <h5 style={{color:'green', textAlign:'center', marginTop: '10px'}}>Copyright | website</h5>
+    <h5>Copyright | website</h5>
     </div>
   );
 }

@@ -5,14 +5,22 @@ const Footer = () => {
   return (
     <footer className="footer">
      <div className="footer-section">
-        <h4>بما تتطلبه</h4>
+        <h4 id="only">بما تتطلبه</h4>
         <ul>
           <li>هناك العديد من أنواع</li>
           <li>بعض التوتر أو الكلمات</li>
           <li>يجب التحقق منها فورا</li>
         </ul>
       </div>
-      <div className="footer-section">
+      <div id="none1" className="footer-section">
+      <h4>بما تتطلبه</h4>
+        <ul>
+          <li>هناك العديد من أنواع</li>
+          <li>بعض التوتر أو الكلمات</li>
+          <li>يجب التحقق منها فورا</li>
+        </ul>
+      </div>
+      <div id="none" className="footer-section">
       <h4>بما تتطلبه</h4>
         <ul>
           <li>هناك العديد من أنواع</li>
@@ -21,17 +29,9 @@ const Footer = () => {
         </ul>
       </div>
       <div className="footer-section">
-      <h4>بما تتطلبه</h4>
-        <ul>
-          <li>هناك العديد من أنواع</li>
-          <li>بعض التوتر أو الكلمات</li>
-          <li>يجب التحقق منها فورا</li>
-        </ul>
       </div>
       <div className="footer-section">
-      </div>
-      <div className="footer-section">
-      <h4>مشاهدة على توبار</h4>
+      <h4 id="you">مشاهدة على توبار</h4>
       <div id="flex">
       <div className="register-bar">
           <input type="email" />

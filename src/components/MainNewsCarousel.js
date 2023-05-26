@@ -1,21 +1,6 @@
 import React, { useState, useEffect } from "react";
-import '../App.css';
-const menuStyles = {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    width: "96%",
-    height: "50px",
-    padding: "0 20px",
-    backgroundColor: "rgba(0, 0, 0, 0)", // Change the hex code to rgba
-    color: "#fff",
-    zIndex: 1,
-    fontWeight: "bold",
-    fontSize: "30px"
-  };
+import '../styles/MainNewsCarousel.css';
+import BurgerMenu from "./BurgerMenu";
 const slideStyles = {
  width: "100%",
  height: "100%",
@@ -23,36 +8,6 @@ const slideStyles = {
  backgroundSize: "cover",
  backgroundPosition: "center",
 };
-const textStyles = {
-  position: "absolute",
-  bottom: 10,
-  right: 0,
-  padding: "10px",
-  backgroundColor: "rgba(0, 0, 0, 0)",
-  color: "#fff",
-  fontSize: "18px",
-  width: "360px",
-  height: "170px",
-  textAlign: "right" // Add this line to align the text to the right
-};
-const sliderStyles = {
- position: "relative",
- height: "100%",
-};
-
-const dotsContainerStyles = {
- display: "flex",
- justifyContent: "left",
- position: "relative",
- top: "-40px"
-};
-
-const dotStyle = {
- margin: "12.5px 7px",
- cursor: "pointer",
- fontSize: "20px",
-};
-
 const MainNewsCarousel = () => {
   const images = [
     {
@@ -104,29 +59,27 @@ const MainNewsCarousel = () => {
  const goToSlide = (slideIndex) => {
  setCurrentIndex(slideIndex);
  };
-
- return (
- <div style={sliderStyles}>
-    <div style={menuStyles}>
-  <div>آراء</div>
-  <div className="divider" />
-  <div>فيديو وصور</div>
-  <div className="divider" />
-  <div>ثقافة</div>
-  <div className="divider" />
-  <div>رياضة</div>
-  <div className="divider" />
-  <div>اقتصاد</div>
-  <div className="divider" />
-  <div>أخبار</div>
-  <div className="divider" />
-  <div>الرئيسية</div>
-</div>
- <div style={slideStylesWidthBackground}></div>
- <div style={dotsContainerStyles}>
+  return (
+    <div id="slider">
+     <div id="menuS">
+      <div className="menu">آراء</div>
+      <div className="divider" />
+      <div className="menu">فيديو وصور</div>
+      <div className="divider" />
+      <div className="menu">ثقافة</div>
+      <div className="divider" />
+      <div className="menu">رياضة</div>
+      <div className="divider" />
+      <div className="menu">اقتصاد</div>
+      <div className="divider" />
+      <div className="menu">أخبار</div>
+      <div className="divider" />
+      <div className="menu">الرئيسية</div>
+    </div>
+    <div style={slideStylesWidthBackground}></div>
+ <div id="dotsC">
  {slides.map((slide, slideIndex) => (
- <div
- style={dotStyle}
+ <div id="dot"
  key={slideIndex}
  onClick={() => goToSlide(slideIndex)}
  >
@@ -134,12 +87,12 @@ const MainNewsCarousel = () => {
  </div>
  ))}
  </div>
- <div style={textStyles}>
+ <div id="textD">
   <h1>خلافا للاعتقاد</h1>
   <div className="horizontalDivider" />
   <p>لوريم ايبسوم ليس نصا عشوائيا، بل ان له جذور في الادب الكلاسيكي اللاتيني منذ العام 45 قبل الميلاد، مما يجعله أكثر من 2000 في القدم</p>
  </div>
  </div>
  );
-};
+}
 export default MainNewsCarousel;

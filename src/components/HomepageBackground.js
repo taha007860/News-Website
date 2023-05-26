@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+import '../styles/HomepageBackground.css';
 import logo from '../assets/logo.jpeg';
 function HomepageBackground() {
   return (
